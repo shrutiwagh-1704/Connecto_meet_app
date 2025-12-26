@@ -725,7 +725,7 @@ export default function Videomeet() {
                                 ref.srcObject = video.stream;
                             }
                         }}
-                        autoPlay muted 
+                        autoPlay 
                         
                         onClick={(e) => {
                         const videoEl = e.target;
