@@ -1,6 +1,6 @@
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import LandingPage from "./pages/landing";
-import Authentication from "./pages/Authentication";
+import Authentication from "./pages/authentication";
 import Videomeet from "./pages/videomeet";
 import HomeComponent from "./pages/home";
 import History from "./pages/history";
