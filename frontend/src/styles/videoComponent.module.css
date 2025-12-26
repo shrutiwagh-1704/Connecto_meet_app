@@ -64,3 +64,150 @@
     position: absolute;
     bottom: 0;
 }
+
+/* Mobile Responsive - 768px and below */
+@media (max-width: 768px) {
+    .buttonContainers {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 5px;
+        padding: 15px 10px;
+    }
+
+    .buttonContainers svg {
+        font-size: 1.8rem;
+    }
+
+    .buttonContainers button {
+        padding: 10px;
+        min-width: 48px;
+    }
+
+    .conferenceView {
+        padding: 5px;
+        gap: 5px;
+        height: calc(100vh - 100px);
+        overflow-y: auto;
+        padding-bottom: 20px;
+    }
+
+    .conferenceView video {
+        width: 100%;
+        height: 30vh;
+        min-width: 100%;
+        max-width: 100%;
+    }
+
+    .meetuserVideo {
+        bottom: 90px;
+        height: 15vh;
+        width: 35vw;
+        left: 5px;
+        border-radius: 10px;
+    }
+
+    .chatRoom {
+        width: 85vw;
+        height: 90vh;
+        right: 0;
+        top: 5vh;
+        border-radius: 10px;
+        padding-inline: 15px;
+    }
+
+    .chatContainer h1 {
+        font-size: 1.5rem;
+        margin-top: 10px;
+    }
+
+    .chattingDisplay {
+        margin-bottom: 100px;
+    }
+
+    .chattingArea {
+        bottom: 20px;
+        flex-direction: row;
+    }
+
+    .chattingArea .MuiTextField-root {
+        flex: 1;
+    }
+}
+
+/* Extra small mobile - 480px and below */
+@media (max-width: 480px) {
+    .buttonContainers {
+        padding: 12px 5px;
+        gap: 3px;
+    }
+
+    .buttonContainers svg {
+        font-size: 1.5rem;
+    }
+
+    .buttonContainers button {
+        padding: 8px;
+        min-width: 44px;
+    }
+
+    .conferenceView {
+        height: calc(100vh - 90px);
+    }
+
+    .conferenceView video {
+        height: 25vh;
+    }
+
+    .meetuserVideo {
+        bottom: 80px;
+        height: 12vh;
+        width: 30vw;
+        left: 5px;
+    }
+
+    .chatRoom {
+        width: 90vw;
+        height: 85vh;
+        top: 7.5vh;
+        padding-inline: 10px;
+    }
+
+    .chatContainer h1 {
+        font-size: 1.2rem;
+        margin-top: 5px;
+        margin-bottom: 10px;
+    }
+
+    .chattingDisplay {
+        font-size: 0.9rem;
+        margin-bottom: 90px;
+    }
+
+    .chattingDisplay > div {
+        margin-bottom: 15px !important;
+    }
+
+    .chattingArea {
+        bottom: 10px;
+        gap: 5px;
+    }
+
+    .chattingArea .MuiTextField-root input {
+        font-size: 0.9rem;
+    }
+}
+
+/* Landscape mode for mobile */
+@media (max-width: 768px) and (orientation: landscape) {
+    .conferenceView video {
+        width: 48%;
+        height: 40vh;
+        min-width: 45%;
+    }
+
+    .meetuserVideo {
+        height: 25vh;
+        width: 25vw;
+    }
+}
